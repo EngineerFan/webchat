@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>webchat</groupId>
+    <artifactId>webchat</artifactId>
+    <version>v1.0</version>
+  </parent>
+  <artifactId>wc-service</artifactId>
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <repositories>
+		<repository>
+			<id>repos</id>
+			<name>Repository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+	<!-- 设定插件仓库 -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repos</id>
+			<name>Repository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<dependencies>
+	    <dependency>
+	        <groupId>webchat</groupId>
+	        <artifactId>wc-api</artifactId>
+	        <version>v1.0</version>
+	    </dependency>
+	</dependencies>
+	<build>
+	    <plugins>
+	       <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compile-plugin</artifactId>
+				<version>3.6.1</version>
+			</plugin>
+	    </plugins>
+	</build>
+</project>
